@@ -1,0 +1,50 @@
+{
+  "vendor": "corebiz",
+  "name": "nasa-graphql",
+  "version": "0.1.0",
+  "title": "Corebiz NASA GraphQL",
+  "mustUpdateAt": "2018-12-26",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "settingsSchema": {},
+  "dependencies": {},
+  "builders": {
+    "graphql": "1.x",
+    "node": "4.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.nasa.gov",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

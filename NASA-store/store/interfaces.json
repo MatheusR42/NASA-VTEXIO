@@ -1,0 +1,52 @@
+{
+  "store.home.nasa": {
+    "before": [
+      "header.full.nasa"
+    ],
+    "required": [
+      "hello"
+    ],
+    "after": [
+      "footer.nasa"
+    ]
+  },
+  "store.login.nasa": {
+    "before": [
+      "header.full.nasa"
+    ],
+    "required": [
+      "login-content"
+    ],
+    "after": [
+      "footer.nasa"
+    ]
+  },
+  "store.nasa": {
+    "before": [
+      "header.full.nasa"
+    ],
+    "required": [
+      "rovers"
+    ],
+    "after": [
+      "footer.nasa"
+    ]
+  },
+  "header.full.nasa": {
+    "required": [
+      "logo",
+      "login",
+      "minicart",
+      "telemarketing",
+      "category-menu",
+      "search-bar"
+    ],
+    "component": "Header"
+  },
+  "footer.nasa": {
+    "component": "Footer"
+  },
+  "theme.nasa": {
+    "component": "Theme"
+  }
+}

@@ -1,0 +1,16 @@
+query marsPhotos($sol: Int!, $rover: String!, $camera: String!) {
+  marsPhotos(sol: $sol, rover: $rover, camera: $camera) {
+    photos {
+      id
+      sol
+      img_src
+      earth_date
+      camera {
+        id
+        rover_id
+        name
+        full_name
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "rovers": {
+    "component": "Rovers"
+  },
+  "hello": {
+    "component": "Hello"
+  },
+  "challenge.custom-challenge": {
+    "component": "CustomChallenge"
+  }
+}

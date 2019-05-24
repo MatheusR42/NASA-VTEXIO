@@ -1,0 +1,26 @@
+{
+  "store.home.nasa": {
+    "blocks": [
+      "hello"
+    ]
+  },
+  "store.nasa": {
+    "blocks": [
+      "rovers"
+    ],
+    "parent": {
+      "challenge": "challenge.custom-challenge"
+    }
+  },
+  "header.full.nasa": {
+    "blocks": [
+      "logo",
+      "login",
+      "minicart",
+      "telemarketing",
+      "category-menu",
+      "search-bar",
+      "theme.nasa"
+    ]
+  }
+}

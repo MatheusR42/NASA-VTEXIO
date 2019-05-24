@@ -1,0 +1,36 @@
+query Profile($customFields: String) {
+ profile(customFields: $customFields) {
+   cacheId
+   id
+   userId
+   firstName
+   lastName
+   birthDate
+   gender
+   homePhone
+   businessPhone
+   document
+   email
+   profilePicture
+   customFields {
+       key
+       value
+       cacheId
+   }
+   address {
+       userId
+       id
+       receiverName
+       complement
+       neighborhood
+       state
+       number
+       street
+       postalCode
+       city
+       reference
+       addressName
+       addressType
+   }
+ }
+}

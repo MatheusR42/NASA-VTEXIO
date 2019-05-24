@@ -1,0 +1,39 @@
+# type Mutation {
+
+# }
+
+type Query {
+	addressInfoByPostalCode(postalCode: String!): AddressInfo
+	marsPhotos(sol: Int!, rover: String!, camera: String!): MarsResponse
+}
+
+type AddressInfo {
+	city: String
+	complement: String
+	country: String
+	neighborhood: String
+	number: String
+	postalCode: String
+	reference: String
+	state: String
+	street: String
+}
+
+type MarsResponse {
+	photos: [RoverPhoto]
+}
+
+type RoverPhoto {
+	id: Int
+	sol: Int
+	camera: RoverCamera
+	img_src: String
+	earth_date: String
+}
+
+type RoverCamera {
+	id: Int
+	rover_id: Int
+	name: String
+	full_name: String
+}

@@ -1,0 +1,7 @@
+{
+  "name": "react",
+  "version": "0.1.0",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}

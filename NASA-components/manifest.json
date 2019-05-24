@@ -1,0 +1,30 @@
+{
+  "vendor": "corebiz",
+  "name": "nasa-components",
+  "version": "0.1.0",
+  "title": "Corebiz NASA Components",
+  "description": "",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "styles": "1.x"
+  },
+  "mustUpdateAt": "2020-02-28",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "corebiz.nasa-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.styleguide": "9.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
